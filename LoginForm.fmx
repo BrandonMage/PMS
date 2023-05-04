@@ -1,0 +1,65 @@
+object UserLoginForm: TUserLoginForm
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object UsernameLogin: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 240.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 292.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Username:'
+    TabOrder = 8
+  end
+  object PasswordLogin: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 240.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 292.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Password:'
+    TabOrder = 6
+  end
+  object GoToRegistrationButton: TButton
+    Position.X = 400.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 132.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Go to registration'
+    OnClick = GoToRegistrationButtonClick
+    object Button1: TButton
+      Position.X = -160.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Login'
+    end
+  end
+end
